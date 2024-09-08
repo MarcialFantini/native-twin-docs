@@ -6,11 +6,13 @@ export default function SpacingPage() {
     <div className="flex flex-col gap-5">
       <HeaderDocsTop
         title="Padding and Margin"
+        id="paddingMargin"
         Data={tailwindClasses.spacing.paddingMargin}
       ></HeaderDocsTop>
 
       <HeaderDocsTop
         title="Gap"
+        id="gap"
         Data={tailwindClasses.spacing.gap}
       ></HeaderDocsTop>
     </div>

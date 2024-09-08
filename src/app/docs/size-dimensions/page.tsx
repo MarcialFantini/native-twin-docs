@@ -6,11 +6,13 @@ export default function SizeDimensionsPage() {
     <div>
       <HeaderDocsTop
         title="Dimensions"
+        id="dimensions"
         Data={tailwindClasses.sizeDimensions.dimensions}
       ></HeaderDocsTop>
 
       <HeaderDocsTop
         title="Resize"
+        id="resize"
         Data={tailwindClasses.sizeDimensions.resize}
       ></HeaderDocsTop>
     </div>

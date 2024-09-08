@@ -7,9 +7,11 @@ export default function ColorsBackgroundPage() {
       <HeaderDocsTop
         title="Background and Border"
         Data={tailwindClasses.colorsBackground.background}
+        id="background"
       ></HeaderDocsTop>
       <HeaderDocsTop
         title="Shadows and Z-index"
+        id="shadowZIndex"
         Data={tailwindClasses.colorsBackground.shadowZIndex}
       ></HeaderDocsTop>
     </div>

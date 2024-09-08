@@ -7,6 +7,7 @@ export default function FlexboxPage() {
       <HeaderDocsTop
         title="Flex"
         Data={tailwindClasses.flexbox.flexProperties}
+        id="flexProperties"
       ></HeaderDocsTop>
     </div>
   );

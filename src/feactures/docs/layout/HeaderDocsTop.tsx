@@ -5,13 +5,15 @@ import { Title } from "../components/Title";
 export const HeaderDocsTop = ({
   Data,
   title,
+  id,
 }: {
   Data: TailwindClass[];
   title: string;
+  id: string;
 }) => {
   return (
     <>
-      <Title>{title}</Title>
+      <Title id={id}>{title}</Title>
       <TableCompatibility Data={Data}></TableCompatibility>
     </>
   );

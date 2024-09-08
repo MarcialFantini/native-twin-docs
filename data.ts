@@ -3,7 +3,7 @@ export interface TailwindClass {
   web: boolean;
   native: boolean;
 }
-const tailwindClasses = {
+export const tailwindClasses = {
   alignmentPositioning: {
     alignment: [
       { class: "align-baseline", web: true, native: true },
@@ -115,76 +115,65 @@ const tailwindClasses = {
     ],
   },
 };
-
 export const tailwindGlossary = {
   alignmentPositioning: {
     title: "Alignment & Positioning",
     categories: [
-      { name: "alignment", route: "alignment-position/#alignment" },
-      { name: "positioning", route: "alignment-position/#positioning" },
-      { name: "position", route: "alignment-position/#position" },
+      { name: "Alignment Classes", route: "alignment-position/#alignment" },
+      { name: "Positioning Classes", route: "alignment-position/#positioning" },
     ],
   },
   flexbox: {
     title: "Flexbox",
     categories: [
-      { name: "flex", route: "flex-box/#flex" },
-      { name: "grow", route: "flex-box/#grow" },
-      { name: "alignment", route: "flex-box/#alignment" },
+      { name: "Flex Properties", route: "flex-box/#flexProperties" },
     ],
   },
   spacing: {
     title: "Spacing",
     categories: [
-      { name: "padding", route: "spacing/#padding" },
-      { name: "margin", route: "spacing/#margin" },
-      { name: "gap", route: "spacing/#gap" },
+      { name: "Padding and Margin", route: "spacing/#paddingMargin" },
+      { name: "Gap Classes", route: "spacing/#gap" },
     ],
   },
   sizeDimensions: {
     title: "Size & Dimensions",
     categories: [
-      { name: "width", route: "size-dimensions/#width" },
-      { name: "height", route: "size-dimensions/#height" },
-      { name: "resize", route: "size-dimensions/#resize" },
+      { name: "Width and Height", route: "size-dimensions/#dimensions" },
+      { name: "Resize Classes", route: "size-dimensions/#resize" },
     ],
   },
   textTypography: {
     title: "Text & Typography",
     categories: [
-      { name: "text", route: "text-typography/#text" },
-      { name: "font", route: "text-typography/#font" },
-      { name: "lineHeight", route: "text-typography/#lineHeight" },
-      { name: "textDecoration", route: "text-typography/#textDecoration" },
+      { name: "Text Styles", route: "text-typography/#textStyles" },
+      {
+        name: "Text Decoration and Colors",
+        route: "text-typography/#decorationAndColor",
+      },
     ],
   },
   colorsBackground: {
     title: "Colors & Background",
     categories: [
-      { name: "background", route: "colors-background/#background" },
-      { name: "border", route: "colors-background/#border" },
-      { name: "textColor", route: "colors-background/#textColor" },
-      { name: "shadow", route: "colors-background/#shadow" },
-      { name: "zIndex", route: "colors-background/#zIndex" },
+      {
+        name: "Background and Borders",
+        route: "colors-background/#background",
+      },
+      { name: "Shadows and Z-Index", route: "colors-background/#shadowZIndex" },
     ],
   },
   transformations: {
     title: "Transformations",
     categories: [
-      { name: "translate", route: "transformations/#translate" },
-      { name: "rotate", route: "transformations/#rotate" },
-      { name: "skew", route: "transformations/#skew" },
-      { name: "scale", route: "transformations/#scale" },
+      { name: "Transform Functions", route: "transformations/#transform" },
     ],
   },
   others: {
     title: "Others",
     categories: [
-      { name: "hidden", route: "other/#hidden" },
-      { name: "overflow", route: "other/#overflow" },
-      { name: "objectFit", route: "other/#objectFit" },
-      { name: "opacity", route: "other/#opacity" },
-      { name: "aspectRatio", route: "other/#aspectRatio" },
+      { name: "Visibility and Overflow", route: "other/#visibility" },
+      { name: "Object Fit and Properties", route: "other/#objectProperties" },
     ],
   },
 };
