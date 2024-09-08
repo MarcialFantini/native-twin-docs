@@ -1,13 +1,12 @@
-import { TailwindClass } from "../../../Interface/tailwindClass";
+import { TailwindClass } from "../../../../../Interface/tailwindClass";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
-} from "../ui/table";
+} from "../../../../components/ui/table";
 export const TableCompatibility = ({ Data }: { Data: TailwindClass[] }) => {
   return (
     <Table>

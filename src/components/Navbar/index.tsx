@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Navbar = () => {
   return (
-    <header className=" w-full flex flex-row justify-around fixed text-white">
+    <header className="z-50 w-full flex flex-row justify-around fixed text-white bg-[rgba(0,0,0,0.4)] backdrop-blur-lg">
       <div className="w-full flex flex-row max-w-[1400px] p-5 m-auto">
         <div className="w-full flex flex-row gap-5 items-center">
           <picture className="w-5 h-5 bg-white flex ">
