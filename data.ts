@@ -30,8 +30,14 @@ export const tailwindClasses = {
       { class: "content-{alignment}", web: true, native: true },
     ],
     positioning: [
+      { class: "static", web: true, native: true },
+      { class: "fixed", web: true, native: true },
+
       { class: "absolute", web: true, native: true },
+
       { class: "relative", web: true, native: true },
+      { class: "sticky", web: true, native: true },
+
       { class: "top-{size}", web: true, native: true },
       { class: "left-{size}", web: true, native: true },
       { class: "bottom-{size}", web: true, native: true },

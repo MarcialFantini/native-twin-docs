@@ -23,14 +23,14 @@ export default function FlexboxPage() {
         its initial size:
       </Text>
       <Code
-        codeString={`<div class="flex">
-  <div class="flex-none w-14 ...">
+        codeString={`<div className="flex">
+  <div className="flex-none w-14 ...">
     01
   </div>
-  <div class="flex-1 w-64 ...">
+  <div className="flex-1 w-64 ...">
     02
   </div>
-  <div class="flex-1 w-32 ...">
+  <div className="flex-1 w-32 ...">
     03
   </div>
 </div>`}
@@ -41,14 +41,14 @@ export default function FlexboxPage() {
         its initial size:
       </Text>
       <Code
-        codeString={`<div class="flex">
-  <div class="flex-none w-14 ...">
+        codeString={`<div className="flex">
+  <div className="flex-none w-14 ...">
     01
   </div>
-  <div class="flex-1 w-64 ...">
+  <div className="flex-1 w-64 ...">
     02
   </div>
-  <div class="flex-1 w-32 ...">
+  <div className="flex-1 w-32 ...">
     03
   </div>
 </div>`}
@@ -60,7 +60,7 @@ export default function FlexboxPage() {
         as text:
       </Text>
       <Code
-        codeString={`<div class="flex flex-row ...">
+        codeString={`<div className="flex flex-row ...">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -71,7 +71,7 @@ export default function FlexboxPage() {
         direction:
       </Text>
       <Code
-        codeString={`<div class="flex flex-row-reverse ...">
+        codeString={`<div className="flex flex-row-reverse ...">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -79,7 +79,7 @@ export default function FlexboxPage() {
       ></Code>
       <Text>Use flex-col to position flex items vertically:</Text>
       <Code
-        codeString={`<div class="flex flex-col ...">
+        codeString={`<div className="flex flex-col ...">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -90,7 +90,7 @@ export default function FlexboxPage() {
         direction:
       </Text>
       <Code
-        codeString={`<div class="flex flex-col-reverse ...">
+        codeString={`<div className="flex flex-col-reverse ...">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -101,7 +101,7 @@ export default function FlexboxPage() {
       <SubTitle>Flex-wrap</SubTitle>
       <Text>Use flex-wrap to allow flex items to wrap:</Text>
       <Code
-        codeString={`<div class="flex flex-wrap">
+        codeString={`<div className="flex flex-wrap">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -113,7 +113,7 @@ export default function FlexboxPage() {
         items to overflow the container if necessary:
       </Text>
       <Code
-        codeString={`<div class="flex flex-nowrap">
+        codeString={`<div className="flex flex-nowrap">
   <div>01</div>
   <div>02</div>
   <div>03</div>
@@ -124,28 +124,28 @@ export default function FlexboxPage() {
         Use grow to allow a flex item to grow to fill any available space:
       </Text>
       <Code
-        codeString={`<div class="flex ...">
-  <div class="flex-none w-14 h-14 ...">
+        codeString={`<div className="flex ...">
+  <div className="flex-none w-14 h-14 ...">
     01
   </div>
-  <div class="grow h-14 ...">
+  <div className="grow h-14 ...">
     02
   </div>
-  <div class="flex-none w-14 h-14 ...">
+  <div className="flex-none w-14 h-14 ...">
     03
   </div>
 </div>`}
       ></Code>
       <Text>Use grow-0 to prevent a flex item from growing:</Text>
       <Code
-        codeString={`<div class="flex ...">
-  <div class="grow h-14 ...">
+        codeString={`<div className="flex ...">
+  <div className="grow h-14 ...">
     01
   </div>
-  <div class="grow-0 h-14 ...">
+  <div className="grow-0 h-14 ...">
     02
   </div>
-  <div class="grow h-14 ...">
+  <div className="grow h-14 ...">
     03
   </div>
 </div>`}
@@ -155,10 +155,10 @@ export default function FlexboxPage() {
         Use the basis-* utilities to set the initial size of flex items.
       </Text>
       <Code
-        codeString={`<div class="flex flex-row">
-  <div class="basis-1/4">01</div>
-  <div class="basis-1/4">02</div>
-  <div class="basis-1/2">03</div>
+        codeString={`<div className="flex flex-row">
+  <div className="basis-1/4">01</div>
+  <div className="basis-1/4">02</div>
+  <div className="basis-1/2">03</div>
 </div>`}
       ></Code>
     </div>

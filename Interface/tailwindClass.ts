@@ -48,3 +48,9 @@ export interface TailwindClasses {
     aspectRatio: TailwindClass[];
   };
 }
+
+export interface classRenderer {
+  title: string;
+  code: string;
+  text: string;
+}
