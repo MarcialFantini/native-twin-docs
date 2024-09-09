@@ -55,11 +55,110 @@ export default function FlexboxPage() {
       ></Code>
 
       <SubTitle>{`flex-{direction}`}</SubTitle>
+      <Text>
+        Use flex-row to position flex items horizontally in the same direction
+        as text:
+      </Text>
       <Code
         codeString={`<div class="flex flex-row ...">
   <div>01</div>
   <div>02</div>
   <div>03</div>
+</div>`}
+      ></Code>
+      <Text>
+        Use flex-row-reverse to position flex items horizontally in the opposite
+        direction:
+      </Text>
+      <Code
+        codeString={`<div class="flex flex-row-reverse ...">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>`}
+      ></Code>
+      <Text>Use flex-col to position flex items vertically:</Text>
+      <Code
+        codeString={`<div class="flex flex-col ...">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>`}
+      ></Code>
+      <Text>
+        Use flex-col-reverse to position flex items vertically in the opposite
+        direction:
+      </Text>
+      <Code
+        codeString={`<div class="flex flex-col-reverse ...">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>
+`}
+      ></Code>
+
+      <SubTitle>Flex-wrap</SubTitle>
+      <Text>Use flex-wrap to allow flex items to wrap:</Text>
+      <Code
+        codeString={`<div class="flex flex-wrap">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>`}
+      ></Code>
+      <SubTitle>Flex-nowrap </SubTitle>
+      <Text>
+        Use flex-nowrap to prevent flex items from wrapping, causing inflexible
+        items to overflow the container if necessary:
+      </Text>
+      <Code
+        codeString={`<div class="flex flex-nowrap">
+  <div>01</div>
+  <div>02</div>
+  <div>03</div>
+</div>`}
+      ></Code>
+      <SubTitle>Flex Grow</SubTitle>
+      <Text>
+        Use grow to allow a flex item to grow to fill any available space:
+      </Text>
+      <Code
+        codeString={`<div class="flex ...">
+  <div class="flex-none w-14 h-14 ...">
+    01
+  </div>
+  <div class="grow h-14 ...">
+    02
+  </div>
+  <div class="flex-none w-14 h-14 ...">
+    03
+  </div>
+</div>`}
+      ></Code>
+      <Text>Use grow-0 to prevent a flex item from growing:</Text>
+      <Code
+        codeString={`<div class="flex ...">
+  <div class="grow h-14 ...">
+    01
+  </div>
+  <div class="grow-0 h-14 ...">
+    02
+  </div>
+  <div class="grow h-14 ...">
+    03
+  </div>
+</div>`}
+      ></Code>
+      <SubTitle>Setting the flex basis</SubTitle>
+      <Text>
+        Use the basis-* utilities to set the initial size of flex items.
+      </Text>
+      <Code
+        codeString={`<div class="flex flex-row">
+  <div class="basis-1/4">01</div>
+  <div class="basis-1/4">02</div>
+  <div class="basis-1/2">03</div>
 </div>`}
       ></Code>
     </div>
