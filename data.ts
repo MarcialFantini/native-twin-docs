@@ -4,6 +4,18 @@ export interface TailwindClass {
   native: boolean;
 }
 export const tailwindClasses = {
+  flexbox: {
+    flexProperties: [
+      { class: "flex", web: true, native: true },
+      { class: "flex-1", web: true, native: true },
+      { class: "flex-{cols}", web: true, native: true },
+      { class: "flex-{direction}", web: true, native: true },
+      { class: "flex-wrap", web: true, native: true },
+      { class: "flex-nowrap", web: true, native: true },
+      { class: "grow-{factor}", web: true, native: true },
+      { class: "basis-{size}", web: true, native: true },
+    ],
+  },
   alignmentPositioning: {
     alignment: [
       { class: "align-baseline", web: true, native: true },
@@ -26,16 +38,7 @@ export const tailwindClasses = {
       { class: "right-{size}", web: true, native: true },
     ],
   },
-  flexbox: {
-    flexProperties: [
-      { class: "flex", web: true, native: true },
-      { class: "flex-{direction}", web: true, native: true },
-      { class: "flex-wrap", web: true, native: true },
-      { class: "flex-nowrap", web: true, native: true },
-      { class: "grow-{factor}", web: true, native: true },
-      { class: "basis-{size}", web: true, native: true },
-    ],
-  },
+
   spacing: {
     paddingMargin: [
       { class: "p-{size}", web: true, native: true },
@@ -116,6 +119,12 @@ export const tailwindClasses = {
   },
 };
 export const tailwindGlossary = {
+  flexbox: {
+    title: "Flexbox",
+    categories: [
+      { name: "Flex Properties", route: "flex-box/#flexProperties" },
+    ],
+  },
   alignmentPositioning: {
     title: "Alignment & Positioning",
     categories: [
@@ -123,12 +132,7 @@ export const tailwindGlossary = {
       { name: "Positioning Classes", route: "alignment-position/#positioning" },
     ],
   },
-  flexbox: {
-    title: "Flexbox",
-    categories: [
-      { name: "Flex Properties", route: "flex-box/#flexProperties" },
-    ],
-  },
+
   spacing: {
     title: "Spacing",
     categories: [

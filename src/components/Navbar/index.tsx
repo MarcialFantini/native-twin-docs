@@ -15,7 +15,7 @@ export const Navbar = () => {
             <li>Docs</li>
             <li>Components</li>
             <li>Github button</li>
-            <li>Theme button</li>
+            {/* <li>Theme button</li> preguntar chrispio */}
           </ul>
         </nav>
       </div>
