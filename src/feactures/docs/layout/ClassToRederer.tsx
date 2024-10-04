@@ -1,6 +1,8 @@
-import { Code } from "../components/Code";
-import { SubTitle } from "../components/SubTitle";
-import { Text } from "../components/Text";
+import React from 'react';
+import { Code } from '../components/Code';
+import { SubTitle } from '../components/SubTitle';
+import { Text } from '../components/Text';
+
 export interface classRenderer {
   title: string;
   code: string;
@@ -11,7 +13,7 @@ export const ClassToRenderer = ({ list }: { list: classRenderer[] }) => {
     <>
       {list.map((item, key) => {
         return (
-          <div key={item.title + key} className="flex flex-col gap-5">
+          <div key={item.title + key} className='flex flex-col gap-5'>
             <SubTitle>{item.title} </SubTitle>
             <Text>{item.text}</Text>
             <Code codeString={item.code}></Code>

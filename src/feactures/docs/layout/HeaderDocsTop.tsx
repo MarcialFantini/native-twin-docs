@@ -1,6 +1,7 @@
-import { TailwindClass } from "../../../../data";
-import { TableCompatibility } from "../components/TableCompatibility";
-import { Title } from "../components/Title";
+import React from 'react';
+import { TailwindClass } from '../../../../data';
+import { TableCompatibility } from '../components/TableCompatibility';
+import { Title } from '../components/Title';
 
 export const HeaderDocsTop = ({
   Data,
